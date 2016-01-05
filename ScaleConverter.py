@@ -10,11 +10,11 @@ def ScaleFactorEng(scale):
 	
 def multiplier(current,desired):
 	multiply = current / desired * 100
-	print "\nYou should scale your drawing by %.2f percent\n" % multiply
+	print "\nYou should scale your file by %.2f percent\n" % multiply
 
 def start():
 	print """
-Welcome to the Great Scale Converter!
+I can easily help you convert your drawing or model from one scale to another.
 Please enter the type of scale you are using.
 Enter 'A' for Architectural Scale
 Enter 'E' for Engineering Scale
@@ -23,12 +23,12 @@ Enter 'E' for Engineering Scale
 	
 def choice():
 	valid = ['A', 'a', 'E', 'e']
-	scaleType = raw_input(">>> ")
+	scaleType = raw_input("\nMake your selection here: ")
 	if scaleType in valid:
 		inputCheck(scaleType)
 		
 	else:
-		print "Sorry, I don't understand that input. Let's try that again."
+		print "Sorry, I don't understand that input. Let's try again."
 		choice()
 		
 def inputCheck(entry):
