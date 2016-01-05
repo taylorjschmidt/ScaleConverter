@@ -15,9 +15,9 @@ def multiplier(current,desired):
 def start():
 	print """
 I can easily help you convert your drawing or model from one scale to another.
-Please enter the type of scale you are using.
-Enter 'A' for Architectural Scale
-Enter 'E' for Engineering Scale
+Please enter the type of scale you are using:
+'A' for Architectural Scale
+'E' for Engineering Scale
 """
 	choice()
 	
